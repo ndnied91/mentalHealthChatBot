@@ -1,0 +1,143 @@
+{{>header}}
+
+<title>Results Page</title>
+<h1 id="center"> Here are some options we think might be helpful  </h1>
+
+
+<div class="container-fluid">
+
+
+
+  <div class="unknown">
+        <div class="row">
+            {{#each results}}
+                {{#if_equal ../unknown keyword}}
+                <p>UNKNOWN</p>
+                        <div class="col-md-6">
+                                <a href="  {{link}}  "target="_blank" >  {{title}} </a>
+                                <p> {{body}} {{phoneNumber}}</p>
+                        </div>
+                 {{/if_equal}}
+            {{/each}}
+        </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mood">
+      <div class="row">
+          {{#each results}}
+              {{#if_equal ../mood keyword}}
+                      <div class="col-md-6">
+                              <a href="  {{link}}  "target="_blank" >  {{title}} </a>
+                              <p> {{body}} {{phoneNumber}}</p>
+                      </div>
+               {{/if_equal}}
+          {{/each}}
+      </div>
+</div>
+
+
+<br>
+  <div class="food">
+      <div class="row">
+          {{#each results}}
+               {{#if_equal ../food keyword}}
+                         <div class="back col-md-6" >
+                                 <a href="  {{link}} " target="_blank">  {{title}} </a>
+                                 <p> {{body}} {{phoneNumber}}</p>
+                        </div>
+               {{/if_equal}}
+          {{/each}}
+      </div>
+  </div>
+<br>
+
+
+<div class="transportation">
+    <div class="row">
+        {{#each results}}
+             {{#if_equal ../transportation keyword}}
+                     <div class="back col-md-6">
+                             <a href="  {{link}} " target="_blank">  {{title}} </a>
+                             <p> {{body}} {{phoneNumber}}</p>
+                    </div>
+             {{/if_equal}}
+        {{/each}}
+    </div>
+</div>
+
+
+
+<br>
+<br>
+
+
+
+
+
+<div class="housing">
+    <div class="row">
+        {{#each results}}
+             {{#if_equal ../housing keyword}}
+                     <div class="back col-md-6">
+                             <a href="  {{link}} " target="_blank">  {{title}} </a>
+                             <p> {{body}} {{phoneNumber}}</p>
+                    </div>
+             {{/if_equal}}
+        {{/each}}
+    </div>
+</div>
+
+
+
+<br>
+<br>
+
+
+<div class="help">
+    <div class="row">
+        {{#each results}}
+             {{#if_equal ../help keyword}}
+                     <div class="back col-md-6">
+                             <a href="  {{link}} " target="_blank">  {{title}} </a>
+                             <p> {{body}} {{phoneNumber}}</p>
+                    </div>
+             {{/if_equal}}
+        {{/each}}
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{>footer}}

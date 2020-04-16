@@ -1,0 +1,108 @@
+{{>header}}
+
+<title>Results Page</title>
+<h1 class="center"> Here are some options we think might be helpful  </h1>
+
+<!-- <div class="canvas"> -->
+<div class="container-fluid">
+
+
+
+  <div class="mood">
+
+
+      {{#each results}}
+
+
+          {{#if_equal ../mood keyword}}
+            <!-- <p> Mood</p> -->
+
+                    <!-- <span>Mood</span> -->
+                           <div class="col-xs-12 col-sm-6 col-md-12">
+                                    <!-- <div class="mood"> -->
+                                   <a href="  {{link}}  "target="_blank" >  {{title}} </a>
+                                   <p> {{body}} {{phoneNumber}}</p>
+                           </div>
+           {{/if_equal}}
+      {{/each}}
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+  <div class="food">
+      {{#each results}}
+
+           {{#if_equal ../food keyword}}
+
+                              <!-- <span>Transportation</span> -->
+                               <div class="col-xs-12 col-sm-6 col-md-12">
+                                       <a href="  {{link}} " target="_blank">  {{title}} </a>
+                                       <p> {{body}} {{phoneNumber}}</p>
+                              </div>
+
+           {{/if_equal}}
+
+
+      {{/each}}
+  </div>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+<div class="transportation">
+
+    {{#each results}}
+
+    <!-- TRANSPORATION -->
+         {{#if_equal ../transportation keyword}}
+
+                            <!-- <span>Transportation</span> -->
+                             <div class="col-xs-12 col-sm-6 col-md-12">
+                                     <a href="  {{link}} " target="_blank">  {{title}} </a>
+                                        <p> {{body}} {{phoneNumber}}</p>
+                            </div>
+
+         {{/if_equal}}
+    {{/each}}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{>footer}}
